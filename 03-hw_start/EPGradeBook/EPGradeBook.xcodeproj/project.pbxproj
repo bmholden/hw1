@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AECC5A9124E8B49C000EF0B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5A9024E8B49C000EF0B7 /* AppDelegate.swift */; };
+		AECC5A9324E8B49C000EF0B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5A9224E8B49C000EF0B7 /* SceneDelegate.swift */; };
+		AECC5A9624E8B49C000EF0B7 /* EPGradeBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AECC5A9424E8B49C000EF0B7 /* EPGradeBook.xcdatamodeld */; };
+		AECC5A9824E8B49C000EF0B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5A9724E8B49C000EF0B7 /* ContentView.swift */; };
+		AECC5A9A24E8B49F000EF0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECC5A9924E8B49F000EF0B7 /* Assets.xcassets */; };
+		AECC5A9D24E8B49F000EF0B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECC5A9C24E8B49F000EF0B7 /* Preview Assets.xcassets */; };
+		AECC5AA024E8B49F000EF0B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECC5A9E24E8B49F000EF0B7 /* LaunchScreen.storyboard */; };
+		AECC5AAB24E8B4A1000EF0B7 /* EPGradeBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5AAA24E8B4A1000EF0B7 /* EPGradeBookTests.swift */; };
+		AECC5AB624E8B4A1000EF0B7 /* EPGradeBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5AB524E8B4A1000EF0B7 /* EPGradeBookUITests.swift */; };
+		AECC5AC624E8B663000EF0B7 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5AC524E8B663000EF0B7 /* Teacher.swift */; };
+		AECC5AC824E8B66F000EF0B7 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5AC724E8B66F000EF0B7 /* Assignment.swift */; };
+		AECC5ACA24E8B67E000EF0B7 /* SchoolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5AC924E8B67E000EF0B7 /* SchoolClass.swift */; };
+		AECC5ACC24E8B699000EF0B7 /* ClassAssignmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5ACB24E8B699000EF0B7 /* ClassAssignmentsModel.swift */; };
+		AECC5ACE24E8B6BC000EF0B7 /* AssignmentGraderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC5ACD24E8B6BC000EF0B7 /* AssignmentGraderModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AECC5AA724E8B4A1000EF0B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECC5A8524E8B49C000EF0B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECC5A8C24E8B49C000EF0B7;
+			remoteInfo = EPGradeBook;
+		};
+		AECC5AB224E8B4A1000EF0B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECC5A8524E8B49C000EF0B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECC5A8C24E8B49C000EF0B7;
+			remoteInfo = EPGradeBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AECC5A8D24E8B49C000EF0B7 /* EPGradeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPGradeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECC5A9024E8B49C000EF0B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AECC5A9224E8B49C000EF0B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AECC5A9524E8B49C000EF0B7 /* EPGradeBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EPGradeBook.xcdatamodel; sourceTree = "<group>"; };
+		AECC5A9724E8B49C000EF0B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AECC5A9924E8B49F000EF0B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECC5A9C24E8B49F000EF0B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AECC5A9F24E8B49F000EF0B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AECC5AA124E8B49F000EF0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECC5AA624E8B4A1000EF0B7 /* EPGradeBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPGradeBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECC5AAA24E8B4A1000EF0B7 /* EPGradeBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGradeBookTests.swift; sourceTree = "<group>"; };
+		AECC5AAC24E8B4A1000EF0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECC5AB124E8B4A1000EF0B7 /* EPGradeBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPGradeBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECC5AB524E8B4A1000EF0B7 /* EPGradeBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGradeBookUITests.swift; sourceTree = "<group>"; };
+		AECC5AB724E8B4A1000EF0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECC5AC524E8B663000EF0B7 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		AECC5AC724E8B66F000EF0B7 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		AECC5AC924E8B67E000EF0B7 /* SchoolClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolClass.swift; sourceTree = "<group>"; };
+		AECC5ACB24E8B699000EF0B7 /* ClassAssignmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAssignmentsModel.swift; sourceTree = "<group>"; };
+		AECC5ACD24E8B6BC000EF0B7 /* AssignmentGraderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGraderModel.swift; sourceTree = "<group>"; };
+		B1F6CBCB2503E36A002F0C78 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = "../../../../../../../Library/Autosave Information/MyPlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECC5A8A24E8B49C000EF0B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECC5AA324E8B4A1000EF0B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECC5AAE24E8B4A1000EF0B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AECC5A8424E8B49C000EF0B7 = {
+			isa = PBXGroup;
+			children = (
+				AECC5A8F24E8B49C000EF0B7 /* EPGradeBook */,
+				AECC5AA924E8B4A1000EF0B7 /* EPGradeBookTests */,
+				AECC5AB424E8B4A1000EF0B7 /* EPGradeBookUITests */,
+				AECC5A8E24E8B49C000EF0B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AECC5A8E24E8B49C000EF0B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECC5A8D24E8B49C000EF0B7 /* EPGradeBook.app */,
+				AECC5AA624E8B4A1000EF0B7 /* EPGradeBookTests.xctest */,
+				AECC5AB124E8B4A1000EF0B7 /* EPGradeBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECC5A8F24E8B49C000EF0B7 /* EPGradeBook */ = {
+			isa = PBXGroup;
+			children = (
+				AECC5AC424E8B5F8000EF0B7 /* Models */,
+				AECC5AC324E8B5D1000EF0B7 /* Resources */,
+				AECC5A9024E8B49C000EF0B7 /* AppDelegate.swift */,
+				AECC5A9224E8B49C000EF0B7 /* SceneDelegate.swift */,
+				AECC5A9724E8B49C000EF0B7 /* ContentView.swift */,
+				AECC5A9924E8B49F000EF0B7 /* Assets.xcassets */,
+				AECC5A9E24E8B49F000EF0B7 /* LaunchScreen.storyboard */,
+				AECC5AA124E8B49F000EF0B7 /* Info.plist */,
+				AECC5A9424E8B49C000EF0B7 /* EPGradeBook.xcdatamodeld */,
+				AECC5A9B24E8B49F000EF0B7 /* Preview Content */,
+			);
+			path = EPGradeBook;
+			sourceTree = "<group>";
+		};
+		AECC5A9B24E8B49F000EF0B7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AECC5A9C24E8B49F000EF0B7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AECC5AA924E8B4A1000EF0B7 /* EPGradeBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				AECC5AAA24E8B4A1000EF0B7 /* EPGradeBookTests.swift */,
+				AECC5AAC24E8B4A1000EF0B7 /* Info.plist */,
+			);
+			path = EPGradeBookTests;
+			sourceTree = "<group>";
+		};
+		AECC5AB424E8B4A1000EF0B7 /* EPGradeBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AECC5AB524E8B4A1000EF0B7 /* EPGradeBookUITests.swift */,
+				AECC5AB724E8B4A1000EF0B7 /* Info.plist */,
+			);
+			path = EPGradeBookUITests;
+			sourceTree = "<group>";
+		};
+		AECC5AC324E8B5D1000EF0B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1F6CBCB2503E36A002F0C78 /* MyPlayground.playground */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AECC5AC424E8B5F8000EF0B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AECC5AC724E8B66F000EF0B7 /* Assignment.swift */,
+				AECC5AC524E8B663000EF0B7 /* Teacher.swift */,
+				AECC5AC924E8B67E000EF0B7 /* SchoolClass.swift */,
+				AECC5ACB24E8B699000EF0B7 /* ClassAssignmentsModel.swift */,
+				AECC5ACD24E8B6BC000EF0B7 /* AssignmentGraderModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECC5A8C24E8B49C000EF0B7 /* EPGradeBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECC5ABA24E8B4A1000EF0B7 /* Build configuration list for PBXNativeTarget "EPGradeBook" */;
+			buildPhases = (
+				AECC5A8924E8B49C000EF0B7 /* Sources */,
+				AECC5A8A24E8B49C000EF0B7 /* Frameworks */,
+				AECC5A8B24E8B49C000EF0B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPGradeBook;
+			productName = EPGradeBook;
+			productReference = AECC5A8D24E8B49C000EF0B7 /* EPGradeBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AECC5AA524E8B4A1000EF0B7 /* EPGradeBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECC5ABD24E8B4A1000EF0B7 /* Build configuration list for PBXNativeTarget "EPGradeBookTests" */;
+			buildPhases = (
+				AECC5AA224E8B4A1000EF0B7 /* Sources */,
+				AECC5AA324E8B4A1000EF0B7 /* Frameworks */,
+				AECC5AA424E8B4A1000EF0B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECC5AA824E8B4A1000EF0B7 /* PBXTargetDependency */,
+			);
+			name = EPGradeBookTests;
+			productName = EPGradeBookTests;
+			productReference = AECC5AA624E8B4A1000EF0B7 /* EPGradeBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AECC5AB024E8B4A1000EF0B7 /* EPGradeBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECC5AC024E8B4A1000EF0B7 /* Build configuration list for PBXNativeTarget "EPGradeBookUITests" */;
+			buildPhases = (
+				AECC5AAD24E8B4A1000EF0B7 /* Sources */,
+				AECC5AAE24E8B4A1000EF0B7 /* Frameworks */,
+				AECC5AAF24E8B4A1000EF0B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECC5AB324E8B4A1000EF0B7 /* PBXTargetDependency */,
+			);
+			name = EPGradeBookUITests;
+			productName = EPGradeBookUITests;
+			productReference = AECC5AB124E8B4A1000EF0B7 /* EPGradeBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECC5A8524E8B49C000EF0B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Teacher;
+				TargetAttributes = {
+					AECC5A8C24E8B49C000EF0B7 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					AECC5AA524E8B4A1000EF0B7 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = AECC5A8C24E8B49C000EF0B7;
+					};
+					AECC5AB024E8B4A1000EF0B7 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = AECC5A8C24E8B49C000EF0B7;
+					};
+				};
+			};
+			buildConfigurationList = AECC5A8824E8B49C000EF0B7 /* Build configuration list for PBXProject "EPGradeBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AECC5A8424E8B49C000EF0B7;
+			productRefGroup = AECC5A8E24E8B49C000EF0B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECC5A8C24E8B49C000EF0B7 /* EPGradeBook */,
+				AECC5AA524E8B4A1000EF0B7 /* EPGradeBookTests */,
+				AECC5AB024E8B4A1000EF0B7 /* EPGradeBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECC5A8B24E8B49C000EF0B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECC5AA024E8B49F000EF0B7 /* LaunchScreen.storyboard in Resources */,
+				AECC5A9D24E8B49F000EF0B7 /* Preview Assets.xcassets in Resources */,
+				AECC5A9A24E8B49F000EF0B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECC5AA424E8B4A1000EF0B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECC5AAF24E8B4A1000EF0B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECC5A8924E8B49C000EF0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECC5AC824E8B66F000EF0B7 /* Assignment.swift in Sources */,
+				AECC5ACC24E8B699000EF0B7 /* ClassAssignmentsModel.swift in Sources */,
+				AECC5ACA24E8B67E000EF0B7 /* SchoolClass.swift in Sources */,
+				AECC5ACE24E8B6BC000EF0B7 /* AssignmentGraderModel.swift in Sources */,
+				AECC5A9124E8B49C000EF0B7 /* AppDelegate.swift in Sources */,
+				AECC5AC624E8B663000EF0B7 /* Teacher.swift in Sources */,
+				AECC5A9624E8B49C000EF0B7 /* EPGradeBook.xcdatamodeld in Sources */,
+				AECC5A9824E8B49C000EF0B7 /* ContentView.swift in Sources */,
+				AECC5A9324E8B49C000EF0B7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECC5AA224E8B4A1000EF0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECC5AAB24E8B4A1000EF0B7 /* EPGradeBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECC5AAD24E8B4A1000EF0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECC5AB624E8B4A1000EF0B7 /* EPGradeBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AECC5AA824E8B4A1000EF0B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECC5A8C24E8B49C000EF0B7 /* EPGradeBook */;
+			targetProxy = AECC5AA724E8B4A1000EF0B7 /* PBXContainerItemProxy */;
+		};
+		AECC5AB324E8B4A1000EF0B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECC5A8C24E8B49C000EF0B7 /* EPGradeBook */;
+			targetProxy = AECC5AB224E8B4A1000EF0B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AECC5A9E24E8B49F000EF0B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECC5A9F24E8B49F000EF0B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AECC5AB824E8B4A1000EF0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AECC5AB924E8B4A1000EF0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECC5ABB24E8B4A1000EF0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EPGradeBook/Preview Content\"";
+				DEVELOPMENT_TEAM = 3P9488PVA3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EPGradeBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.jhu.ep.steele.josh.EPGradeBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AECC5ABC24E8B4A1000EF0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EPGradeBook/Preview Content\"";
+				DEVELOPMENT_TEAM = 3P9488PVA3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EPGradeBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.jhu.ep.steele.josh.EPGradeBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AECC5ABE24E8B4A1000EF0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P9488PVA3;
+				INFOPLIST_FILE = EPGradeBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.jhu.ep.steele.josh.EPGradeBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPGradeBook.app/EPGradeBook";
+			};
+			name = Debug;
+		};
+		AECC5ABF24E8B4A1000EF0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P9488PVA3;
+				INFOPLIST_FILE = EPGradeBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.jhu.ep.steele.josh.EPGradeBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPGradeBook.app/EPGradeBook";
+			};
+			name = Release;
+		};
+		AECC5AC124E8B4A1000EF0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P9488PVA3;
+				INFOPLIST_FILE = EPGradeBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.jhu.ep.steele.josh.EPGradeBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EPGradeBook;
+			};
+			name = Debug;
+		};
+		AECC5AC224E8B4A1000EF0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P9488PVA3;
+				INFOPLIST_FILE = EPGradeBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.jhu.ep.steele.josh.EPGradeBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EPGradeBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECC5A8824E8B49C000EF0B7 /* Build configuration list for PBXProject "EPGradeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECC5AB824E8B4A1000EF0B7 /* Debug */,
+				AECC5AB924E8B4A1000EF0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECC5ABA24E8B4A1000EF0B7 /* Build configuration list for PBXNativeTarget "EPGradeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECC5ABB24E8B4A1000EF0B7 /* Debug */,
+				AECC5ABC24E8B4A1000EF0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECC5ABD24E8B4A1000EF0B7 /* Build configuration list for PBXNativeTarget "EPGradeBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECC5ABE24E8B4A1000EF0B7 /* Debug */,
+				AECC5ABF24E8B4A1000EF0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECC5AC024E8B4A1000EF0B7 /* Build configuration list for PBXNativeTarget "EPGradeBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECC5AC124E8B4A1000EF0B7 /* Debug */,
+				AECC5AC224E8B4A1000EF0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AECC5A9424E8B49C000EF0B7 /* EPGradeBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AECC5A9524E8B49C000EF0B7 /* EPGradeBook.xcdatamodel */,
+			);
+			currentVersion = AECC5A9524E8B49C000EF0B7 /* EPGradeBook.xcdatamodel */;
+			path = EPGradeBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AECC5A8524E8B49C000EF0B7 /* Project object */;
+}

@@ -1,0 +1,24 @@
+{
+  "email" : "john.smith@gmail.com",
+  "jhed" : "jsmith2",
+  "imageName" : "johnsmith",
+  "program" : "Computer Science",
+  "address" : "Columbia, MD",
+  "name" : "John Smith",
+  "assignmentGrades" : [
+    {
+      "grade" : 100,
+      "graderComments" : "Good job!",
+      "assignment" : {
+        "id" : "0C3DDC3D-5634-478C-AD8F-58C79FBD8EFB",
+        "assignmentType" : "Development Log",
+        "maxGrade" : 100,
+        "releaseDate" : 614391948.478899,
+        "averageRating" : 4,
+        "description" : "Blah",
+        "name" : "Assignment 1",
+        "dueDate" : 614391948.478899
+      }
+    }
+  ],
+}

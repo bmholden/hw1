@@ -1,0 +1,14 @@
+[
+  {
+    "email" : "john.smith@gmail.com",
+    "jhed" : "jsmith2",
+    "imageName" : "johnsmith",
+    "program" : "Computer Science",
+    "address" : "Columbia, MD",
+    "name" : "John Smith",
+    "assignmentGrades" : [
+    ],
+    "classes" : [
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "className" : "605.687 F2020",
+  "students" : [
+    {
+      "address" : "Columbia, MD",
+      "program" : "Computer Science",
+      "email" : "john.smith@gmail.com",
+      "jhed" : "jsmith2",
+      "assignmentGrades" : [
+        {
+          "grade" : 100,
+          "graderComments" : "Good job!",
+          "assignment" : {
+            "assignmentType" : "Development Log",
+            "id" : "0C3DDC3D-5634-478C-AD8F-58C79FBD8EFB",
+            "maxGrade" : 100,
+            "releaseDate" : 614391948.478899,
+            "description" : "Blah",
+            "averageRating" : 4,
+            "name" : "Assignment 1",
+            "dueDate" : 614391948.478899
+          }
+        }
+      ],
+      "imageName" : "johnsmith",
+      "name" : "John Smith"
+    }
+  ],
+  "pastTeachers" : [
+  ],
+  "currentTeacher" : {
+    "affiliation" : "JHU\/APL",
+    "activelyTeaching" : [
+      "605.687 F2020"
+    ],
+    "startDate" : 460094400,
+    "highestDegree" : "Masters",
+    "currentRating" : 4,
+    "email" : "hococoder@gmail.com",
+    "jhed" : "rsteele3",
+    "imageName" : "josh.jpg",
+    "name" : "Josh Steele",
+    "classesTaught" : [
+      "605.687 F2020",
+      "605.687 S2021"
+    ]
+  }
+}
